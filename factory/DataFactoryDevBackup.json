@@ -1,0 +1,9 @@
+{
+	"name": "DataFactoryDevBackup",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "69786dc7-17a0-4561-b8c1-36be38647ef4",
+		"tenantId": "65b52940-f4b6-41bd-833d-3033ecbcf6e1"
+	}
+}
