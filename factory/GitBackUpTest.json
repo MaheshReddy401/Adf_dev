@@ -1,0 +1,9 @@
+{
+	"name": "GitBackUpTest",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "67bf30a3-ea3a-40cc-9923-d1c9355b9429",
+		"tenantId": "65b52940-f4b6-41bd-833d-3033ecbcf6e1"
+	}
+}

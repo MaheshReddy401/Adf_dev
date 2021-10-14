@@ -1,0 +1,9 @@
+{
+	"name": "DevDataFactory401",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "99951a6c-5ca0-4e4d-bf87-b37b9a62364d",
+		"tenantId": "65b52940-f4b6-41bd-833d-3033ecbcf6e1"
+	}
+}
