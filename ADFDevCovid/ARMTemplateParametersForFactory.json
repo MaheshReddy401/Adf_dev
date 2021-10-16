@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFDevCovid"
+		},
+		"ls_adl_population_accountKey": {
+			"value": ""
+		},
+		"ls_blb_population_connectionString": {
+			"value": ""
+		},
+		"AzureKeyVault_SinkDB_properties_typeProperties_baseUrl": {
+			"value": "https://DevKeyVault401.vault.azure.net/"
+		},
+		"AzureKeyVault_SourceDB_properties_typeProperties_baseUrl": {
+			"value": "https://DevKeyVault401.vault.azure.net/"
+		},
+		"StorageAzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://DevKeyVault401.vault.azure.net/"
+		},
+		"lnk_azureblob_input_properties_typeProperties_connectionString_secretName": {
+			"value": "StorageKeyVault"
+		},
+		"lnk_azuresql_destinationdb_properties_typeProperties_connectionString_secretName": {
+			"value": "KVDestinationDB"
+		},
+		"lnk_azuresql_sourcedb_properties_typeProperties_connectionString_secretName": {
+			"value": "KVSourceDB"
+		},
+		"ls_adl_population_properties_typeProperties_url": {
+			"value": "https://adldevcovidstorage.dfs.core.windows.net"
+		},
+		"se_copy_tr_properties_typeProperties_scope": {
+			"value": "/subscriptions/70c7b9d7-2741-4798-8b55-6caa956c994d/resourceGroups/RG-Dev/providers/Microsoft.Storage/storageAccounts/blbdevstorage"
+		}
+	}
+}
