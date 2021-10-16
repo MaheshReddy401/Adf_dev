@@ -13,7 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/population/blobs/population_by_age.tsv",
+			"blobPathBeginsWith": "/population/blobs/population_by_age.tsv.gz",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/70c7b9d7-2741-4798-8b55-6caa956c994d/resourceGroups/RG-Dev/providers/Microsoft.Storage/storageAccounts/blbdevstorage",
 			"events": [
