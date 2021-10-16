@@ -1,8 +1,8 @@
 {
-	"name": "ds_azureblobinput",
+	"name": "ds_rawpopulation",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_azureblob_input",
+			"referenceName": "ls_blb_population",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,13 +10,16 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"container": "inputcontainer"
+				"fileName": "population_by_age.tsv.gz",
+				"container": "population"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }

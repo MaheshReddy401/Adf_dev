@@ -1,0 +1,9 @@
+{
+	"name": "ADFDevCovid",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "78242d12-0160-4423-b6ab-fa364d35e535",
+		"tenantId": "65b52940-f4b6-41bd-833d-3033ecbcf6e1"
+	}
+}
