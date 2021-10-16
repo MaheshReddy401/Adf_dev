@@ -1,24 +1,24 @@
 {
-	"name": "ds_blob_source",
+	"name": "ds_adl_population",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_azureblob_input",
+			"referenceName": "ls_adl_population",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"fileName": "dbo.EmployeeDetails.csv",
-				"container": "inputcontainer"
+				"type": "AzureBlobFSLocation",
+				"fileName": "population.tsv",
+				"folderPath": "population",
+				"fileSystem": "raw"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
