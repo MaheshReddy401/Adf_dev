@@ -47,6 +47,10 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/70c7b9d7-2741-4798-8b55-6caa956c994d/resourceGroups/RG-Dev/providers/Microsoft.Storage/storageAccounts/blbdevstorage"
 		},
+		"ls_ecdc_covid_deaths_http_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -91,6 +95,9 @@
 					},
 					"ls_adl_population_properties_typeProperties_url": {
 						"value": "[parameters('ls_adl_population_properties_typeProperties_url')]"
+					},
+					"ls_ecdc_covid_deaths_http_properties_typeProperties_url": {
+						"value": "[parameters('ls_ecdc_covid_deaths_http_properties_typeProperties_url')]"
 					},
 					"lnk_azureblob_input_properties_typeProperties_connectionString_secretName": {
 						"value": "[parameters('lnk_azureblob_input_properties_typeProperties_connectionString_secretName')]"
